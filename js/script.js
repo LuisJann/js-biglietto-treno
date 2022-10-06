@@ -25,12 +25,12 @@ if (age >= 65) {
     console.log(price);
     document.getElementById("finalPrice").innerHTML = "Il tuo biglietto costa: " + price + "€";
 }
-else if (age <= 18){
+else if (age < 18) {
     let price = (ticketPrice * 0.8).toFixed(2);
     console.log(price);
     document.getElementById("finalPrice").innerHTML = "Il tuo biglietto costa: " + price + "€";
 }
-else{
+else {
     let price = (ticketPrice).toFixed(2);
     console.log(price);
     document.getElementById("finalPrice").innerHTML = "Il tuo biglietto costa: " + price + "€";
